@@ -1,0 +1,142 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "INOTEBOOK",
+    "collectionId": "2b25269a-2864-49cd-a8b2-c18dbe406c08",
+    "dateExported": "2024-05-29T12:03:28.221Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "63536182-269f-41d2-85f8-066c5f050cba",
+            "name": "Notes",
+            "containerId": "",
+            "created": "2024-05-29T11:06:29.012Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "c10591fd-2aa8-441b-8f17-bd13a4c20587",
+            "name": "authentication",
+            "containerId": "",
+            "created": "2024-05-29T06:21:16.876Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ff862eaa-ce56-4730-99c4-e6ec81e62963",
+            "colId": "2b25269a-2864-49cd-a8b2-c18dbe406c08",
+            "containerId": "c10591fd-2aa8-441b-8f17-bd13a4c20587",
+            "name": "creatuser",
+            "url": "http://localhost:5000/api/auth/createuser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-29T06:21:24.691Z",
+            "modified": "2024-05-29T09:49:50.355Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"devpar\",\n  \"email\": \"dev3@gmail.com\",\n  \"password\": \"wertqwe\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "5232c023-f07e-4190-8dfd-e4713b7421a1",
+            "colId": "2b25269a-2864-49cd-a8b2-c18dbe406c08",
+            "containerId": "c10591fd-2aa8-441b-8f17-bd13a4c20587",
+            "name": "User login using creds",
+            "url": "http://localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-29T09:29:34.908Z",
+            "modified": "2024-05-29T09:50:03.833Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \"email\": \"dev3@gmail.com\",\n  \"password\": \"wertqwe\"\n  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5cebfa17-37e5-4e6a-b615-9ebf42ab01df",
+            "colId": "2b25269a-2864-49cd-a8b2-c18dbe406c08",
+            "containerId": "c10591fd-2aa8-441b-8f17-bd13a4c20587",
+            "name": "getuserdata",
+            "url": "http://localhost:5000/api/auth/getuser",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-29T10:27:12.933Z",
+            "modified": "2024-05-29T10:43:07.662Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY1NmZhM2U5MDNlYzYyMjUwNWI5OGViIn0sImlhdCI6MTcxNjk3OTM2NywiZXhwIjoxNzE2OTgyOTY3fQ.aKgsxD76-ANBPtC9ElWN_l18olu5-cnKx-1uNcR8NVc"
+                }
+            ]
+        },
+        {
+            "_id": "2c66fb1f-2807-4fb8-bdbd-7df2c40a742b",
+            "colId": "2b25269a-2864-49cd-a8b2-c18dbe406c08",
+            "containerId": "63536182-269f-41d2-85f8-066c5f050cba",
+            "name": "fecthallnotes",
+            "url": "http://localhost:5000/api/notes/fetchallnotes",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-29T11:07:59.523Z",
+            "modified": "2024-05-29T11:53:58.205Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY1NmZhM2U5MDNlYzYyMjUwNWI5OGViIn0sImlhdCI6MTcxNjk4MzQxOSwiZXhwIjoxNzE2OTg3MDE5fQ.FvlZ9QGmId_1hYBtQYp_BHgjaBNv8JFP3-GZHF1piwo"
+                }
+            ]
+        },
+        {
+            "_id": "4c4273b5-0526-49e8-83a1-fd4a97a2e349",
+            "colId": "2b25269a-2864-49cd-a8b2-c18dbe406c08",
+            "containerId": "63536182-269f-41d2-85f8-066c5f050cba",
+            "name": "add notes",
+            "url": "http://localhost:5000/api/notes/addnote",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-05-29T11:47:18.485Z",
+            "modified": "2024-05-29T11:50:38.475Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY1NmZhM2U5MDNlYzYyMjUwNWI5OGViIn0sImlhdCI6MTcxNjk4MzQxOSwiZXhwIjoxNzE2OTg3MDE5fQ.FvlZ9QGmId_1hYBtQYp_BHgjaBNv8JFP3-GZHF1piwo"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"title\": \"Meeting Notes\",\n    \"description\": \"Discuss project milestones and deliverables.\",\n    \"tag\": \"work\",\n    \"user\": \"60b8d2959e1b2c001c8e4b1a\",\n    \"date\": \"2023-05-29T10:30:00.000Z\"\n  }",
+                "form": []
+            }
+        },
+        {
+            "_id": "fa13b534-aedb-4da2-9e9d-48973554ece7",
+            "colId": "2b25269a-2864-49cd-a8b2-c18dbe406c08",
+            "containerId": "63536182-269f-41d2-85f8-066c5f050cba",
+            "name": "updatenotes",
+            "url": "",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-05-29T11:58:37.381Z",
+            "modified": "2024-05-29T11:58:37.381Z",
+            "headers": []
+        }
+    ],
+    "ref": "F5hwtsIvVQAfSavulvkm8VQ_cbbxSd5-tZIlyjnFi3NUZsDMXZPU9lC48R6aoAQCFw4a64hNxZb1Oxop5_ZlSw"
+}
