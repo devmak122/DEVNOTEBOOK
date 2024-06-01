@@ -1,0 +1,44 @@
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    color: #fff; /* White color */
+  }
+  
+  /* Navbar Links */
+  .navbar-nav .nav-link {
+    font-size: 20px; /* Larger font size */
+    color: #fff; /* White color */
+    padding: 10px 30px;
+    transition: color 0.3s ease; /* Smooth color transition */
+    margin-right: 70px; /* Add margin-right to create space between links */
+  }
+  
+  
+  
+.navbar-nav .nav-link:hover {
+    color: #28a745; /* Change color on hover */
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    background-color: #343a40; /* Dark background color */
+  }
+  
+  /* Navbar Toggler Icon */
+  .navbar-toggler {
+    border: none; /* Remove border */
+    background: transparent; /* Transparent background */
+  }
+  
+  .navbar-toggler:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  .navbar-toggler-icon {
+    color: #fff; /* White color */
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+  .navbar-nav .nav-link:not(:last-child) {
+    margin-right: 90px; /* Add margin-right between links */
+  }

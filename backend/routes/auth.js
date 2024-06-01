@@ -52,7 +52,7 @@ router.post(
         },
       };
 
-      jwt.sign(payload, JWT_SECRET, { expiresIn: "1h" }, (err, token) => {
+      jwt.sign(payload, JWT_SECRET, (err, token) => {
         if (err) throw err;
         res.json({ token });
       });
